@@ -3,10 +3,12 @@
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
-    "start": "expo start",
+    "start": "bunx expo start",
     "reset-project": "node ./scripts/reset-project.js",
-    "android": "expo run:android",
-    "ios": "expo run:ios",
+    "android": "bunx expo run:android",
+    "ios": "bunx expo run:ios",
+    "ios-device": "bunx expo run:ios --device",
+    "prebuild": "expo prebuild",
     "web": "expo start --web",
     "test": "jest --watchAll",
     "lint": "expo lint"
@@ -23,6 +25,7 @@
     "expo-blur": "~14.0.3",
     "expo-constants": "~17.0.8",
     "expo-crypto": "~14.0.2",
+    "expo-dev-client": "~5.0.19",
     "expo-font": "~13.0.4",
     "expo-haptics": "~14.0.1",
     "expo-linking": "~7.0.5",
