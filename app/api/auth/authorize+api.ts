@@ -53,5 +53,6 @@ import {
       prompt: "select_account",
     });
   
+    console.log("Redirecting to Google Auth URL:", GOOGLE_AUTH_URL + "?" + params.toString());
     return Response.redirect(GOOGLE_AUTH_URL + "?" + params.toString());
   }
